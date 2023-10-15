@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>XetrozCAI的个人网站</title>
+		<script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+		<script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+		<script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+		<style>
+			body{
+				background-image:url("background.jpg");
+				background-size:cover;
+			}
+		</style>
+	</head>
+<body>
+	<div style="text-align: center;height:50px;line-height:50px;background-color:rgba(255,255,255,0.5);border-radius: 50px;"><h2 id="timex"></h2></div>
+	<script type="text/babel">
+		function time() {
+			const element = (new Date().toLocaleTimeString());
+			document.getElementById('timex').innerHTML=element;
+		}
+		setInterval(time, 1);
+	</script>
+	<br>
+	<div style="background-color:rgba(255,255,255,0.5);border-radius: 30px;">
+		<br>
+		<p style="font-size:30px;text-align: center;">XetrozCAI</p>
+		<p style="text-indent:2em">XetrozCAI人如其名，是一个蒟蒻。</p>
+		<p style="text-indent:2em">性别：男</p>
+		<p style="text-indent:2em">擅长的编程语言：C++，Python，HTML，Javascript，CSS。</p>
+		<p style="text-indent:2em">你在看对吧！！！！！</p>
+		<br>
+	</div>
+</body>
